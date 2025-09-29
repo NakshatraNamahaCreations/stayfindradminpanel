@@ -23,7 +23,7 @@ function Login() {
     setLoading(true);
 
     try {
-      const res = await fetch("http://192.168.1.93:8000/api/v1/admin/login", {
+      const res = await fetch("https://api.stayfinderindia.net/api/v1/admin/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
